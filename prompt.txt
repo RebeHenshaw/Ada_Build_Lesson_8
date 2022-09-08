@@ -1,0 +1,56 @@
+You are going to write a function that will help Ada track the sales from her vending machine. At Ada’s Vending machine, a customer can deposit an amount of money to purchase the available items from the machine.
+
+The function has three parameters:
+
+inventory, a list of dictionaries where each dictionary represents an item in the vending machine. The item has a name, item_number (location in vending machine), price, and quantity.
+choice, the item number the customer selected.
+funds, the amount of money the customer input.
+The program should:
+
+Display items within the vending machine to customers.
+Check if the user made a valid choice and has enough funds
+If the choice is invalid, print string "That is an invalid choice"
+If the choice is valid, check to ensure the user has enough funds to purchase an item.
+If funds are sufficient:
+Calculate and print the change given: "Thank you for your purchase! Your change is $<0.XX>"
+Remove one from the appropriate vending machine quantity and print the updated inventory.
+If not sufficient amount, print string "That is not enough money to purchase <name>"
+
+
+example output:
+Welcome to Ada's Vending Machine!
+Here are the available items:
+-
+Name: Ada Chips
+Vending Machine Number: A1
+Price: $0.50
+Quantity: 5
+-
+Name: Ada Candy Bar
+Vending Machine Number: A2
+Price: $0.75
+Quantity: 5
+-
+Name: Ada Gum
+Vending Machine Number: A3
+Price: $0.25
+Quantity: 5
+
+Thank you for your purchase! Here's your change of $0.75
+
+This is the updated inventory:
+-
+Name: Ada Chips
+Vending Machine Number: A1
+Price: $0.50
+Quantity: 5
+-
+Name: Ada Candy Bar
+Vending Machine Number: A2
+Price: $0.75
+Quantity: 5
+-
+Name: Ada Gum
+Vending Machine Number: A3
+Price: $0.25
+Quantity: 4

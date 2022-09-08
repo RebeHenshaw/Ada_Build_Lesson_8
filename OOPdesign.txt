@@ -1,0 +1,17 @@
+
+
+Objects: Vending machine:
+                display()
+                welcome ()
+
+         items:
+             name
+             price
+             quantity
+             number
+
+             update()
+             purchase()
+             confirm item()
+             confirm funds()
+
